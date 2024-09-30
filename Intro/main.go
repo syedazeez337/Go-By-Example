@@ -1,6 +1,7 @@
 package main
 
 func main() {
+	/*
 	hello()
 	values()
 	variables()
@@ -10,4 +11,15 @@ func main() {
 	switchstatement()
 	array()
 	slicesFunc()
+	mapExamples()
+	functions()
+	variadicFuncs()
+	anaonfunc()
+	recursive()
+	ranges()
+	pointers()
+	stringsRunes()
+	structs()
+	*/
+	methods()
 }
