@@ -6,4 +6,7 @@ func main() {
 	variables()
 	constants()
 	forloop()
+	conditionals()
+	switchstatement()
+	array()
 }
