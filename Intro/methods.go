@@ -10,7 +10,7 @@ type rect struct {
 	length int
 }
 
-func (r rect) area() int {
+func (r rect) areas() int {
 	return r.width * r.length
 }
 
@@ -20,6 +20,6 @@ func (r rect) perimeter() int {
 
 func methods() {
 	rectangle := rect{width: 34, length: 45}
-	fmt.Println("Area is ",rectangle.area())
+	fmt.Println("Area is ",rectangle.areas())
 	fmt.Println("Perimeter is ", rectangle.perimeter())
 }

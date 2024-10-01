@@ -20,6 +20,7 @@ func main() {
 	pointers()
 	stringsRunes()
 	structs()
-	*/
 	methods()
+	*/
+	interfaces()
 }
