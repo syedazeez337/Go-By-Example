@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 )
 
 func main() {
 	// mainFunc()
-	fmt.Println(pow(8))
+	// fmt.Println(pow(8))
+	// addArr()
+	usingDefer()
 }
