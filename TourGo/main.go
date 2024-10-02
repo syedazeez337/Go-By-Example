@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	mainFunc()
+	// mainFunc()
+	fmt.Println(pow(8))
 }
