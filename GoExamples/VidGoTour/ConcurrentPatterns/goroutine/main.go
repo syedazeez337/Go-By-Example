@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+
+	arr := []int {22,23,34,44,52}
+
 	go func() {
 		fmt.Println("First function")
 	}()
@@ -16,6 +19,10 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		go countGoroutine(i)
+	}
+
+	for _, elem := range arr {
+		go countGoroutine(elem)
 	}
 
 	time.Sleep(time.Second)
