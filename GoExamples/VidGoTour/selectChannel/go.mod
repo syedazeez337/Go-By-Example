@@ -1,0 +1,3 @@
+module selectChannel
+
+go 1.23.2
