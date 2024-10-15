@@ -17,7 +17,7 @@ func main() {
 		fmt.Println("Second function")
 	}()
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		go countGoroutine(i)
 	}
 
