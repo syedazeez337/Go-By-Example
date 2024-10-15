@@ -6,6 +6,8 @@ import (
 
 func main() {
 	ch := make(chan string)
+	done := make(chan bool)
+	count := 0
 
 	go func() {
 		ch <- "Go message"
@@ -15,9 +17,16 @@ func main() {
 		ch <- "Second go Message"
 	}()
 
-	val, ok := <-ch
-	fmt.Printf("Value: %s, ok: %v\n", val, ok)
+	go func() {
+		for i := 0; i < 2; i++ {
+			<-ch
+			count++
+		}
+		done <- true
+	}()
 
-	val, ok = <-ch
-	fmt.Printf("Value: %s, ok: %v\n", val, ok)
+	// Wait for all messages to be processed
+	<-done
+
+	fmt.Printf("Total number of strings in the channel: %d\n", count)
 }
