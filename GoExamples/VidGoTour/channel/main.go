@@ -11,7 +11,13 @@ func main() {
 		ch <- "Go message"
 	}()
 
-	val, ok := <- ch
+	go func() {
+		ch <- "Second go Message"
+	}()
 
+	val, ok := <-ch
+	fmt.Printf("Value: %s, ok: %v\n", val, ok)
+
+	val, ok = <-ch
 	fmt.Printf("Value: %s, ok: %v\n", val, ok)
 }
