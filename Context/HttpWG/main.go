@@ -38,6 +38,6 @@ func httpResponse(web string) *http.Response {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// fmt.Println("Response: ", resp.Status)
+	fmt.Println("Response: ", resp.Status)
 	return resp
 }
