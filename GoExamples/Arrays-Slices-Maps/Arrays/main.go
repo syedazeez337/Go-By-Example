@@ -15,12 +15,13 @@ func main() {
 
 	fmt.Println("Array>", a)
 
-	b := [5]int{21,22,32,45,67}
+	b := [5]int{21, 22, 32, 45, 67}
 	fmt.Println("Array 2>", b)
-	
+
 	// slice declaration
-	c := []string {"a","b","c","d"}
+	c := []string{"a", "b", "c", "d", "e", "f"}
 	fmt.Println("Slice>", c)
+	fmt.Println("Indexed slice>", c[2:5])
 
 	d := make([]int, 5)
 	fmt.Println("Empty slice>", d)
@@ -36,4 +37,3 @@ func main() {
 
 	fmt.Println(phoneBook)
 }
-
