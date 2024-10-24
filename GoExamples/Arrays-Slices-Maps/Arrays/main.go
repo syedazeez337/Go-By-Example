@@ -29,6 +29,13 @@ func main() {
 	d = append(d, 3)
 	fmt.Println("Refined slice>", d)
 
+
+	var nilMap map[string]int
+	fmt.Println(nilMap)
+
+	var emptyMap = make(map[int]string)
+	fmt.Println(emptyMap)
+	
 	phoneBook := map[string]int{
 		"A": 123,
 		"C": 456,
