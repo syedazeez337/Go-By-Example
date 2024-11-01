@@ -9,3 +9,7 @@ func variables() {
 	v = "string"
 	fmt.Println(v)
 }
+
+func push(v int) int {
+	return v
+}

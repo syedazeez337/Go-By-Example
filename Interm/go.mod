@@ -1,3 +1,3 @@
-module Go-By_Example/Interm
+module Interm
 
-go 1.22.6
+go 1.23.2
